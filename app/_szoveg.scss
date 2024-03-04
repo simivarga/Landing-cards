@@ -1,0 +1,26 @@
+.text_right{
+    position: relative;
+    top: 2%;
+    display: block;
+    width: 100%;
+    max-width: 416px;
+    height: 505px;
+    background-size: cover;
+    background-position: center center;
+    
+        h4{
+            color: $sotetzold;
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.18rem;
+            margin: 0%;
+            transition: all .3s;
+            line-height: 1.9;
+        }
+        h4:hover{
+            text-decoration: underline;
+            transition: all .3s;
+            cursor: pointer;
+        }
+    
+}

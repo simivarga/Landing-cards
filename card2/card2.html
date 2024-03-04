@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2</title>
+</head>
+<body>
+    <div class="section2_container_bg">
+        <div class="section2__images__group">
+            <div class="section2_image">
+                <div class="section2_text">
+                    <h3>
+                        Fehérvár FC – Ferencvárosi 
+                        TC: magyar edzői siker – 
+                        elemzés
+                    </h3>
+                </div>
+                <div class="zold">
+                    <div class="zold_text"><i class="fa-solid fa-futbol"></i>
+                        Labdarugas
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+</body>
+<style>
+    .section2_container_bg {
+  width: 95%;
+  height: 233px;
+  opacity: 1;
+  margin: auto;
+}
+.section2__images__group {
+  display: flex;
+  gap: 1.3rem;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 856px;
+  height: 100%;
+  margin: auto;
+}
+.section2_image {
+    display: flex;
+    flex-direction: column-reverse;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, #000 200%), url("../img/section2_small1.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 360px;
+  background-position: center center;
+  height: 100%;
+  background-size: cover;
+}
+
+.section2_text {
+  position: relative;
+  color: white;
+  bottom: 0%;
+  width: 95%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 15px;
+}
+h3 {
+    margin: 5px 0 20px 10px;
+}
+.zold{
+  background-color: #55AE3A;
+  color: white;
+  transform: skew(-30deg);
+  width: 160px;
+  height: 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0px 0px 35px;
+}
+.zold_text{
+  font-size: 1.1rem;
+  display: flex;
+  transform: skew(30deg);
+  padding: 5px;
+  
+  justify-content: center;
+}
+
+@media (max-width: 63.5rem) {
+  .section2 {
+    height: 188px;
+  }
+  .section2_image {
+    max-width: 336px;
+  }
+ 
+  .section2_text {
+    font-size: 1rem;
+  }
+  
+  .section2_container_bg {
+    width: 85%;
+  }
+}
+@media (max-width: 50rem) {
+  .section2 {
+    height: 148px;
+  }
+  .section2_image {
+    max-width: 266px;
+  }
+  
+  .section2_text {
+    font-size: 0.8rem;
+  }
+  .zold{
+    width: 122px;
+    height: 24px;
+  }
+  .zold_text{
+    font-size: .9rem;
+  }
+  
+}
+@media (max-width: 30rem) {
+  .section2 {
+    height: 27.5rem;
+  }
+ 
+  .section2_image {
+    max-width: 400px;
+    height: 200px;
+    margin-bottom: 1.6rem;
+  }
+ 
+  .section2_text {
+    font-size: 1rem;
+  }
+  
+}
+@media (max-width: 23.4375rem) {
+  .section2_container_bg {
+    width: 95%;
+  }
+  .section2_image {
+    max-width: 21.9375rem;
+  }
+}
+</style>
+</html>

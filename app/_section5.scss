@@ -1,0 +1,103 @@
+.section5{
+    width: 100%;
+    position: relative;
+    top: 16%;
+    height: 646px;
+    margin-bottom: 30px;
+    &_container{
+        width: 95%;
+        height: 100%;
+        opacity: 1;
+        margin: auto;
+    }
+    &_content{
+        position: relative;
+        width: 100%;
+        max-width: 856px;
+        height: 100%;
+        margin: auto;
+    }
+    &_pic{
+        width: 100%;
+        max-height: 480px;
+        background-image: url('/img/section5_big.svg');
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
+    &_text{
+        margin-top: .5%;
+        width: 100%;
+        position: relative;
+        max-height: 166px;
+        height: 100%;
+        background-color: white;
+        color: black;
+        .title_section5{
+            font-size: 24px;
+            font-weight: 800;
+            padding-top: 10px;
+            max-height: 64px;
+            height: 100%;
+            max-width: 90%;
+            margin: auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .description_section5{
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 2%;
+            max-height: 53px;
+            height: 100%;
+            max-width: 90%;
+            margin: 10px auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5;
+        }
+    }
+    
+}
+@media (max-width: 63.5rem) {
+    .section5{
+
+        &_container{
+            width: 85%;
+        }
+    }
+}
+@media (max-width: 50rem) {
+    .section5{
+        height: 540px; 
+        top: 18%;
+        &_content{
+            max-width: 696px;
+            max-height: 540px;
+        }
+        &_pic{
+            max-height: 390px;
+        }
+    }
+}
+@media (max-width: 30rem) {
+    .section5{
+        top: 18%;
+        max-height: 344px;
+        &_content{
+            max-height: 344px;
+        }
+        &_container{
+           width: 95%;
+        }
+        &_pic{
+            max-height: 196px;
+        }
+    }
+}

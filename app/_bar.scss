@@ -1,0 +1,107 @@
+.bar{
+    top: 10%;
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    margin-bottom: 30px;
+    &_container{
+        width: 85%;
+        margin: auto;
+        height: 100%;
+        background-color: $sotetzold;
+    }
+    &_bg{
+        height: 100%;
+        width: 85%;
+        margin: auto;
+    }
+    &_items{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    }
+}
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 233px;
+        height: 100%;
+        font-weight: 800;
+        font-size: 1.1rem;
+        transition: all .3s;
+    }
+    .text{
+        transition: all .3s;
+    }
+    i{
+        transition: all .3s;
+        padding-right: 5px;
+    }
+    .text{
+        font-size: 1.1rem;
+        color: white;
+        text-align: center;
+    }
+    .box:hover{
+        background-color: white;
+        transform: skew(-45deg);
+        color: $sotetzold;
+        transition: all .3s;
+         .text{
+            transform: skew(45deg);
+            color: $sotetzold;
+            transition: all .3s;
+        }
+        i{
+            transform: skew(45deg);
+            color: $sotetzold;
+            transition: all .3s;
+        }
+    }
+    
+    
+
+@media (max-width: 50rem) {
+    .bar{
+        display: block;
+    }
+}
+@media (max-width:30rem) {
+    .bar{
+        top: 9%;
+    }
+    .text{
+        font-size: .8rem;
+    }
+    i{
+        font-size: .9rem;
+    }
+}
+@media (max-width:23.4375rem) { /// 375px
+    .bar{
+        height: 2rem;
+        &_container{
+            width: 95%;
+
+        }
+    }
+    .text{
+        display: none;
+    }
+    .box:hover{
+        width: 150%;
+        i{
+            color: black;
+        }
+        .text{
+            display: block;
+            color: black;
+        }
+    }
+}
+

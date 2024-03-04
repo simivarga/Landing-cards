@@ -1,0 +1,120 @@
+header {
+    position: relative;
+    background-image: url(/img/hatter.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 60px;
+    padding: 0px;
+    margin-bottom: 30px;
+    nav{
+        padding: 10px 40px;
+    }
+    input {
+        max-width: 250px;
+        width:100%;
+        max-height: 3px;
+        border-width: 0px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+}
+.header__logo{
+    background-image: url('/img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 195px;
+    height: 29px;
+}
+.header__logo__phone{
+    background-image: url('/img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 195px;
+    height: 29px;
+    display: none;
+}
+#header__menu {
+    cursor: pointer;
+    margin-right: 1.5rem;
+    margin-top: .5rem;
+.span{
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 3px;
+}
+}
+
+
+
+.header__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a:first-child {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 800;
+        padding-left: 0px
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 800;
+        padding-left: 30px;
+        transition: all 200ms ease-in-out;
+    }
+    
+   i{
+    font-size: 1.2rem;
+    padding-right: .5rem;
+   }
+} 
+
+
+
+@media (max-width: 30em){ /// 480px
+     .header__logo{
+        display: none;
+    }
+    .header__logo__phone{
+        display: block;
+        max-width: 120px;
+        height: 20px;
+    }
+    #header__menu{
+        margin-top: 5px;
+        margin-right: 0;
+        .span{
+            width: 24px;
+            
+        }
+    }
+}
+@media (min-width:30.06em){
+    .header__pic{
+        display: none;
+    }
+  }
+
+
+@media (max-width:72.15em){
+    .header__links{
+        a{
+            font-size: .8rem;
+        }
+        i{
+            font-size: .9rem;
+            padding-right: 0.2rem;
+        }
+    }
+  }
+
+@media (max-width:63.5em){
+    .header__links{
+        display: none;
+    }
+  }
+  
