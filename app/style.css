@@ -1055,7 +1055,7 @@ main {
   top: 12%;
   max-width: 416px;
   height: 32px;
-  background-image: url("/img/hatter");
+  background-image: url("img/hatter");
   background-size: cover;
   background-position: center center;
 }
