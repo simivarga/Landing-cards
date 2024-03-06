@@ -164,7 +164,7 @@ header input {
 }
 .section_image {
   position: relative;
-  background-image: url("/img/big__bg.svg");
+  background: linear-gradient(360deg, #363636 2.46%, rgba(54, 54, 54, 0.769065) 38.05%, rgba(54, 54, 54, 0) 100%), url("../img/big__bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -174,12 +174,45 @@ header input {
   height: 100%;
 }
 .section_text {
-  position: absolute;
   bottom: 0%;
   width: 95.5%;
+  height: 120px;
   font-size: 1.2rem;
   font-weight: 900;
   padding: 0 20px 10px 20px;
+}
+.section h2 {
+  margin: 0;
+}
+.section .section_content_wrap {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section .section_zold {
+  background-color: #55AE3A;
+  color: white;
+  top: 50%;
+  transform: skew(-30deg);
+  width: 160px;
+  height: 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0px 0px 30px;
+}
+.section .zold_text {
+  font-size: 1.1rem;
+  display: flex;
+  transform: skew(30deg);
+  padding: 5px;
+  font-weight: 400;
+  justify-content: center;
+}
+.section i {
+  margin-top: 0.5%;
+  font-size: 18;
 }
 
 @media (max-width: 63.5rem) {
@@ -239,39 +272,57 @@ header input {
 }
 .section2_image {
   position: relative;
-  background-image: url("/img/section2_small1.svg");
+  background-image: linear-gradient(to bottom, transparent, #000 200%), url("../img/section2_small1.svg");
   background-repeat: no-repeat;
   width: 100%;
   max-width: 360px;
   background-position: center center;
   height: 100%;
   background-size: cover;
-}
-.section2_image2 {
-  position: relative;
-  background-image: url("/img/section2_small2.svg");
-  background-repeat: no-repeat;
-  max-width: 360px;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  background-position: center center;
 }
 .section2_text {
-  position: absolute;
-  bottom: 0%;
   width: 95%;
+  height: 55px;
   font-size: 1.3rem;
   font-weight: 500;
   padding-left: 15px;
+  padding-bottom: 10px;
 }
-.section2_text2 {
+.section2 .content_wrap {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  bottom: 0%;
-  width: 95%;
-  font-size: 1.3rem;
-  font-weight: normal;
-  padding-left: 15px;
+  bottom: 0;
+  gap: 5px;
+}
+.section2 .zold {
+  background-color: #55AE3A;
+  color: white;
+  transform: skew(-30deg);
+  width: 160px;
+  height: 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0px 0px 25px;
+}
+.section2 .zold_text {
+  font-size: 1.1rem;
+  display: flex;
+  transform: skew(30deg);
+  padding: 5px;
+  font-weight: 400;
+  justify-content: center;
+}
+.section2 h3 {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section2 i {
+  margin-top: 1%;
 }
 
 @media (max-width: 63.5rem) {
@@ -424,38 +475,45 @@ header input {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.section3_content_second {
+.section3_content .section3_content_second {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 390px;
   max-width: 360px;
   width: 100%;
   background-color: white;
 }
-.section3_content_second_card {
+.section3_content .section3_content_second_card_right {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+.section3_content .section3_content_second_card {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-height: 86px;
   height: 100%;
+  gap: 20px;
 }
-.section3_content_second_card_pic {
-  background-image: url("/img/section3_small.svg");
+.section3_content .section3_content_second_card_pic {
+  background-image: url("../img/section3_small.svg");
   background-size: cover;
   background-position: center center;
   max-width: 86px;
+  min-width: 78px;
   width: 100%;
   height: 100%;
 }
-.section3_content_second_card_text {
+.section3_content .section3_content_second_card_text {
   background-color: white;
   color: black;
   padding-left: 15px;
   position: relative;
-  top: 41%;
   height: 51px;
-  width: 70%;
+  width: 100%;
+  line-height: 1.34;
   font-weight: bold;
   max-width: 306px;
   display: -webkit-box;
@@ -463,6 +521,26 @@ header input {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.section3_content .zold {
+  background-color: #55AE3A;
+  color: white;
+  transform: skew(-30deg);
+  width: 160px;
+  height: 28px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0px 0px 25px;
+}
+.section3_content .zold_text {
+  font-size: 1rem;
+  display: flex;
+  transform: skew(30deg);
+  padding: 5px;
+  justify-content: center;
+}
+.section3_content i {
+  margin-top: 1%;
 }
 
 @media (max-width: 63.5rem) {
@@ -513,6 +591,7 @@ header input {
   }
   .section3_content_second {
     max-width: 266px;
+    max-height: 330px;
   }
   .section3_content_second_card_text {
     width: 65%;
@@ -857,7 +936,7 @@ header input {
   height: 100%;
 }
 .section6_items .item2 .pic2 {
-  background-image: url("/img/section6.svg");
+  background-image: linear-gradient(to bottom, transparent, #000 200%), url("../img/section6.svg");
   background-size: cover;
   background-position: center center;
   height: 100%;
