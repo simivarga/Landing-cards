@@ -176,6 +176,9 @@
             }
     
     }
+    .section3_content_second{
+        max-width: 336px;
+    }
 }
 }
 @media (max-width: 50rem) {
@@ -205,7 +208,7 @@
             }
             &_second{
                 max-width: 266px;
-                max-height: 330px;
+                max-height: 300px;
                 &_card{
                     &_text{
                       width: 65%;
