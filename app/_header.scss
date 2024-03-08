@@ -66,7 +66,10 @@ header {
         padding-left: 30px;
         transition: all 200ms ease-in-out;
     }
-    
+    a:hover{
+        color: #9ea19e;
+        transition: all .2s ease-in-out;
+    }
    i{
     font-size: 1.2rem;
     padding-right: .5rem;
