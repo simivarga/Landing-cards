@@ -1,0 +1,36 @@
+.zold{
+    background-color: #55AE3A;
+    color: white;
+    transform: skew(-30deg);
+    max-width: 160px;
+    width: 100%;
+    height: 32px;
+    margin: 0 0px 0px 25px;
+  }
+  .zold_text{
+    font-size: 1.1rem;
+    display: flex;
+    transform: skew(30deg);
+    padding: 5px 0 5px 0;
+    font-weight: 400;
+    justify-content: center;
+    width: 100%;
+  }
+  i{
+    margin-top: .5%;
+    font-size: 18;
+  }
+
+  @media (max-width: 48rem){
+    .zold{
+        width: 120px;
+        height: 28px;
+    }
+    .zold_text{
+        font-size: .9rem;
+    }
+    i{
+        font-size: 1rem;
+        margin-top: 1.5%;
+    }
+  }

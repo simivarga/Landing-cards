@@ -38,7 +38,12 @@
         padding:  0 20px 10px 20px;
     }
     h2{
-        margin:0
+        margin:0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .section_content_wrap{
         position: absolute;
@@ -47,29 +52,6 @@
         flex-direction: column;
         gap: 10px;
     }
-    .section_zold{
-        background-color: #55AE3A;
-        color: white;
-        top: 50%;
-        transform: skew(-30deg);
-        width: 160px;
-        height: 32px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        margin: 0 0px 0px 30px;
-      }
-      .zold_text{
-        font-size: 1.1rem;
-        display: flex;
-        transform: skew(30deg);
-        padding: 5px;
-        font-weight: 400;
-        justify-content: center;
-      }
-      i{
-        margin-top: .5%;
-        font-size: 18;
-      }
 }
 
 // Media for section1
