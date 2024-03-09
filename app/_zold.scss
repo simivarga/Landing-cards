@@ -3,7 +3,7 @@
     color: white;
     transform: skew(-30deg);
     max-width: 160px;
-    width: 100%;
+    width: 90%;
     height: 32px;
     margin: 0 0px 0px 25px;
   }
@@ -11,8 +11,9 @@
     background-color: #55AE3A;
     color: white;
     transform: skew(-30deg);
-    width: 130px;
+    max-width: 130px;
     height: 28px;
+    min-width: 95px;
     margin: 0 0px 0px 25px;
 }
   .zold_text{
@@ -25,17 +26,21 @@
     width: 100%;
   }
   .zold_text_kicsi{
-    font-size: .9rem;
+    font-size: .8rem;
     display: flex;
     transform: skew(30deg);
     padding: 5px 0 5px 0;
     font-weight: 400;
     justify-content: center;
     width: 100%;
+    i{
+      font-size: .75rem;
+    }
   }
+  
   i{
     margin-top: .5%;
-    font-size: 18;
+    font-size: 16;
   }
 
   @media (max-width: 50rem){

@@ -71,7 +71,9 @@
            margin: auto;
 
         }
-        
+        &_content_wrap{
+            max-height: 130px;
+        }
         &_text{
             font-size: .8rem;
             padding:  0 10px 5px 10px;
@@ -93,6 +95,9 @@
         &_text{
             font-size: .6rem;
             padding:  0 5px 2px 5px;
+        }
+        &_content_wrap{
+            max-height: 110px;
         }
     }
 }
