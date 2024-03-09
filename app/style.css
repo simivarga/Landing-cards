@@ -826,7 +826,7 @@ header input {
   padding-top: 10px;
   max-height: 64px;
   height: 100%;
-  max-width: 90%;
+  max-width: 95%;
   margin: auto;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -840,7 +840,7 @@ header input {
   margin-top: 2%;
   max-height: 50px;
   height: 100%;
-  max-width: 90%;
+  max-width: 95%;
   margin: 10px auto;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1308,6 +1308,7 @@ i {
 }
 .zold_text_kicsi i {
   font-size: 0.75rem;
+  padding-top: 1%;
 }
 
 i {
