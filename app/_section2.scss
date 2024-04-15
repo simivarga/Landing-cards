@@ -21,13 +21,9 @@
     }
     &_image{
         position: relative;
-        background-image: linear-gradient(to bottom, transparent, #000 200%), url("../img/section2_small1.svg");
-        background-repeat: no-repeat ;
         width: 100%;
         max-width: 360px;
-        background-position: center center;
         height: 100%;
-        background-size: cover;
     }
     
     &_text{

@@ -9,3 +9,9 @@ $sotetzold: #006633;
     flex-direction: column-reverse;
     gap: 5px;
 }
+
+
+.hover-for-cards:hover{
+  box-shadow: 3px 3px 3px 3px gray;
+   transition: box-shadow .2s ease-in-out;
+}
