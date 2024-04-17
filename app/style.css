@@ -162,6 +162,20 @@ header input {
   transition: box-shadow 0.2s ease-in-out;
 }
 
+.gradient {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, black, transparent);
+  opacity: 0.5;
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+img {
+  display: block;
+}
+
 .section {
   width: 100%;
   position: relative;

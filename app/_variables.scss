@@ -15,3 +15,17 @@ $sotetzold: #006633;
   box-shadow: 3px 3px 3px 3px gray;
    transition: box-shadow .2s ease-in-out;
 }
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, black, transparent);
+  opacity: .5;
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+img {
+  display: block;
+
+}
